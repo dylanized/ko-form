@@ -1,0 +1,464 @@
+/*
+  Strapless Starter Skin
+  Download - http://github.com/dylanized/strapless
+  Author - Dylan Hassinger
+  Site - dylanized.com
+*/
+
+/* body settings */
+
+    body {
+		background-color : #fff;
+		font-weight : normal;
+		line-height : 1.6;
+		color : #333;     
+		text-align: left;	      
+		position : relative; 
+    }
+    
+    body, input, textarea {
+    	font-family : 'Asap', Helvetica, Arial, sans-serif;
+    }	    
+    
+    a:link     	{ color: #999; font-weight: normal; text-decoration: none; }
+    a:visited  	{ color: #999; font-weight: normal; text-decoration: none; }
+    a:hover    	{ color: #333; font-weight: normal; text-decoration: none; }
+    a:active   	{ color: #333; font-weight: normal; text-decoration: none; }	         
+	    	    		    
+/* structure */
+	
+	.container {
+		max-width : 100%;
+	}
+
+	.pad {
+		padding-top : 2em;
+		padding-bottom : 1em;
+	}
+	
+	.inner {
+		margin : 2em;
+	}
+		
+/* header */
+
+        #header {
+          	position : relative;
+          	background-color : #2e99d6;
+        }
+        
+        #header .container {	
+          	padding : 1.5em 0 1.5em 0;        
+        }
+        
+        #header #logo {
+        	margin : 0 0 .2em 0;        	
+          	font-size : 2em;
+          	line-height : 1.0;
+            font-weight : normal;  
+            text-align : center;
+            color : #fff;
+            font-family : Pacifico;
+            text-transform : lowercase;
+            letter-spacing : 1px;
+        }
+        
+        #header #logo a {
+          	outline : none;
+            font-weight : normal;   
+            color : #fff;                  	
+        }
+        
+        #header #logo a:hover,
+        #header #logo a:active {
+        	text-decoration : none;
+        	color : #fff;
+        }        
+        
+        #tagline {
+        	font-weight : normal;
+        	line-height : 1.0;
+        	text-align : center;
+        	color : #fff;
+        }   
+        
+        #header .icon {
+        	font-size : 2em;
+        	color : #fff;
+        	padding : .3em;
+        	position : absolute;
+        	top : .2em;          	
+        }
+        
+        #back-button { left : .4em; }   
+        #menu-button { right : .4em; }
+        
+        #header a:hover i	{ color : #095d8d; }
+        #header a:active i	{ color : #095d8d; }
+        
+	/* primary-nav */
+	
+		#nav {		
+           background-color : #4c5a62;
+           padding : .5em 0 1.8em 0;
+           color : #fff;
+           text-align : center;
+		}
+		
+		#nav div { margin-bottom : .5em; letter-spacing : 1.25em; }
+		
+		#nav div i {
+			font-size : 3em;
+			color : #fff;
+		}
+		
+		#nav a:hover i,
+		#nav a:active i { color : #ccc; }
+
+		#nav span {
+			display : none;
+		}
+		
+		#nav #page-nav {
+			clear : left;
+			list-style-type : none;
+			display : inline;
+		}
+		
+		#nav #page-nav li {
+			font-size : 1em;
+			display : inline;
+			border : 1px solid #fff;
+			padding : .3em .6em .3em .6em;
+		}
+
+		#nav #page-nav li a:link 		{ color : #fff; }
+		#nav #page-nav li a:visited 	{ color : #fff; }
+		#nav #page-nav li a:hover 		{ color : #ccc; }
+		#nav #page-nav li a:active 		{ color : #ccc; }				
+				
+		#nav #page-nav li:first-child {
+			border-top-left-radius: 7px;
+			border-bottom-left-radius: 7px;
+		}
+
+		#nav #page-nav li:last-child {
+			border-top-right-radius: 7px;
+			border-bottom-right-radius: 7px;
+		}
+		
+		#nav #page-nav li.current {
+			background-color : #fff;
+			color : #4c5a62;
+		}
+		
+		#nav #page-nav li.current a:link 		{ color : #4c5a62; }
+		#nav #page-nav li.current a:visited 	{ color : #4c5a62; }
+		#nav #page-nav li.current a:hover 		{ color : #ccc; }
+		#nav #page-nav li.current a:active 		{ color : #ccc; }		
+		    	
+	/* common styleset */		
+	
+			.common {
+					
+			}
+	
+			.common h1,
+			.common h2,
+			.common h3,
+			.common h4,
+			.common h5,
+			.common h6 {
+				font-weight : normal;
+				margin : 0 0 0.7em 0;
+				padding : 0;
+				line-height : 1.1;
+			}		
+			
+			.common h1 { font-size : 2.0em; margin-bottom : 1.4em; }
+			.common h2 { font-size : 1.8em; }
+			.common h3 { font-size : 1.5em; }
+			.common h4 { font-size : 1.3em; }
+			.common h5 { font-size : 1.0em; }
+			.common h6 { font-size : 1.0em; }	
+			
+			.common h6 a:link { text-decoration : none !important; }		
+	
+			.common p,
+			.common nav {
+				margin : 0 0 1.5em 0;
+			}		
+	
+			.common ul {
+				margin : 0 0 2.2em 1.2em;				
+				list-style-type : square;
+			}
+	
+			.common ul li {
+				margin : 0 0 .5em 0;	
+				padding : 0 0 0 .4em;					
+			}
+			
+			.common ol {
+				margin : 0 0 2.2em 1.2em;
+				list-style-type : decimal;
+			}
+	
+			.common ol li {
+				margin : 0 0 .5em .4em;
+			}           
+	        
+	        .common blockquote {
+				padding : 0 0 0 2.0em;	 
+				margin-bottom : 2.0em;     
+				border-left : 4px solid brown;     	
+	    	}
+	    	
+	        .common blockquote p {
+	        	font-style : italic;               
+				line-height : 1.4;      	
+	    	}	
+	    	
+	/* image alignment */
+			
+			.common .alignleft,
+			.common .alignright,
+			.common .alignnone,
+			.common .aligncenter {
+		    	border : 1px solid #ccc !important;
+		    	padding : .5em;			
+			}									
+		
+		    .common .alignleft {
+		    	float: left;
+		    	margin: .2em 1.0em .5em 0;		    	
+		    }
+		    
+		    .common .alignright {
+		    	float: right;
+		    	margin: .2em 0 .5em 1.0em;
+		    }
+		    
+		    .common .aligncenter {
+		    	margin: .2em auto 0 auto;
+		    	display : block;
+		    }
+		    
+		    .common .alignnone {
+		    	margin: .2em 0 .5em 1.0em;
+		    }
+		    
+		    .common .wp-caption-text {
+		    	margin : 0;
+		    	padding : .5em;
+		    	text-align : left;
+		    	color : #000;
+		    	background-color : #fff;
+		    	font-size : 1.2em;
+		    }
+		    	    	
+	/* posts */
+
+			.common .post {
+				margin : 0 0 2.5em 0;
+			}
+
+			.common .post-meta {
+				font-size : 1.2em;
+				margin : -1.5em 0 1.0em 0 !important;
+				padding : 0;
+			}
+			
+			.common .post-nav {
+				clear : both;
+				padding : 0 0 2.5em 0;
+			}	    	    
+			
+			.common  .post-nav {
+				clear: both;
+				margin: 2.5em 0px;
+			}
+			
+			.common  .post-nav .alignright,
+			.common  .post-nav .alignleft {
+				padding: 0;
+				background-color: none;
+				border: none;
+			}
+						
+	/* forms */	
+	
+			.common-form fieldset {
+				padding : .5em;
+				border-bottom : 1px solid #ccc;
+			}
+			
+			.common-form fieldset:first-child {
+				border-top : 1px solid #ccc;
+			}
+					
+			.common-form label {
+				color : #000;			
+				font-size : 1.2em;
+				font-weight : normal;
+				line-height : 1.4;
+			}
+			
+			.common-form .field-label { display : none; }
+			
+			.common-form input[type=text],
+			.common-form textarea {
+				display : block;				
+				padding : .3em;
+				font-size : 1.2em;
+				color : #333;
+				line-height : 1.4;
+				font-weight : normal;
+				border : 1px solid #ccc;
+			}
+			
+			.common-form input[type=text]:focus,
+			.common-form textarea:focus {
+				color : #000;
+				outline : none;
+			}			
+			
+			.common-form input[type=submit] {
+				font-weight : normal;
+				font-size : 1.2em;
+				line-height : 1.2;
+				cursor : pointer;					
+			}	
+			
+			.common-form small {
+				color : #ccc;
+			}
+			
+	/* item list */
+	
+		#item-list {
+			list-style-type : none;
+			margin : 0;
+			padding : 0;
+		}			
+		
+		#item-list li {
+			margin : 0;
+			padding : 0;
+		}
+
+		#item-list li a {
+			display : block;
+			padding : 1em 0 1em 0;
+			margin : 0;
+			font-size : 2em;
+			border-bottom : 1px solid #e2e3e9;
+			width : 100%;
+			text-indent : 1em;
+		}
+		
+		#item-list li a:hover,
+		#item-list li a:active { color : #002c45; background-color : #e2e3e9; }
+		
+	/* home menu */
+	
+		#homepage #content { background-color : #e2e3e9; }
+	
+		#home-menu {
+			margin : 0;
+			padding : 0;
+			list-style-type : none;
+		}
+
+		#home-menu li {
+			margin : 0 0 1em 0;
+			padding : 0;
+		}
+		
+		#home-menu li a {			
+			display : block;
+			width : 10em;		
+			margin : 0 auto 0 auto;
+			padding : 1.5em;
+			font-size : 2em;
+			line-height : 1.0;
+			text-align : center;
+			background-color : #009ce2;
+			border-bottom : 5px #006997 solid;
+		}
+		
+		#home-menu li a:link,
+		#home-menu li a:visited { color : #fff; }		
+		
+		#home-menu li a:hover,
+		#home-menu li a:active { color : #002c45; }
+			
+	/* sidebar */
+	
+			.sidebar-widget {
+				margin-bottom : 2em; 
+			}			
+			
+			.panel {
+				background-color : #e8e8e8;
+				padding : 1.0em;
+			}	
+										
+/* footer */
+
+        #footer {
+			position : relative;
+			clear : both;
+			background-color : #2e99d6;
+        }
+        
+        #footer .container {
+        	padding : 1em 0 1em 0;
+        }
+        
+        #footer p {
+        	font-size : 1em;
+        	line-height : 1.0;
+        }
+        
+        #footer a:link 		{ color : #fff; }
+        #footer a:visited 	{ color : #fff; }
+        #footer a:hover 	{ color : #fff; text-decoration : underline; }
+        #footer a:active 	{ color : #fff; text-decoration : underline; }
+    
+/* utility classes */
+
+    .inline			{ display : inline; }					    
+    .block			{ display : block; }					    
+    .inline-block	{ display : inline-block; }					    
+		    
+    .left 			{ float : left; }    
+    .right 			{ float : right; }		    
+
+    .center     	{ text-align: center; }
+    .text-left		{ text-align :left; }
+    .text-right		{ text-align :right; }
+     
+    .centered   	{ display: block; margin: 0 auto .5em auto; }
+    
+    .section 		{ margin-bottom : 2.5em; }
+
+    .hidden     	{ position : absolute; left : -9999px; }
+    
+    .uppercase		{ text-transform : uppercase; }
+
+    .no-border  	{ border: none !important; }
+
+    .clear      	{ clear: both; } 
+    
+/* mobile overrides */
+
+	@media handheld, only screen and (max-width: 800px) {
+
+	}
+
+	@media handheld, only screen and (max-width: 400px) {
+		/*#header .container 	{ padding-top : .5em; }
+		#header #logo		{ text-align : normal; }
+		#header #tagline	{ text-align : normal; }*/
+	}
